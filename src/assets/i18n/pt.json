@@ -1,0 +1,40 @@
+{
+  "label_table_title": "Título",
+  "label_table_approved": "Aprovada",
+  "label_table_area": "Área",
+
+  "label_table_id": "Id",
+  "label_table_code": "Código",
+  "label_table_pluri_name": "Nome do Pluri",
+  "label_table_name": "Nome",
+  "label_table_send_init": "Data Início Envio",
+  "label_table_final_init": "Data Final Envio",
+  "label_table_total_areas": "Quantidade de áreas",
+
+
+  "MENU": {
+    "HOME": "Início",
+    "PLURI": "Pluri",
+    "CREATE_PLURI": "Criar Pluri",
+    "SEARCH_PLURI": "Pesquisar Pluri",
+    "ADMINISTRATION": "Administração",
+    "USERS": "Usuários",
+    "CREATE_USER": "Criar Usuário",
+    "SEARCH_USERS": "Pesquisar Usuários",
+    "PROFILES": "Perfis",
+    "CREATE_PROFILE": "Criar Perfil",
+    "SEARCH_PROFILES": "Pesquisar Perfis",
+    "AREAS": "Áreas",
+    "CREATE_AREA": "Criar Área",
+    "SEARCH_AREAS": "Pesquisar Áreas",
+    "TEACHER": "Professor",
+    "CREATE_QUESTION": "Criar Questão",
+    "MY_QUESTIONS": "Minhas Questões",
+    "QUESTIONS_TO_SEND": "Questões a Enviar",
+    "ADJUSTER": "Ajuntador",
+    "ASSIGN_DOCENT": "Indicar Docente para Pluri Área",
+    "DESIGNER": "Diagramador",
+    "LIST_QUESTIONS": "Listar Questões",
+    "SEARCH_PLURI_OVERVIEW": "Pesquisar Pluri Overview"
+  }
+}
