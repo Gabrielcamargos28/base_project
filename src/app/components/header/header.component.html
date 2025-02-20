@@ -1,0 +1,57 @@
+<!--
+  <div class="layout-topbar" *ngIf="userObs | async as userObs">
+-->
+<div class="layout-topbar">
+
+  <a href="#" (click)="appComponent.onMenuButtonClick($event)">
+    <img src="assets/logo/logo-ifood.png" alt="iFood" class="logo-header"/>
+  </a>
+
+  <a href="#" class="layout-topbar-user" (click)="appComponent.onTopbarMenuButtonClick($event)">
+    <img src="assets/layout/images/avatar.png" alt="Avatar" class="logo-header"/>
+  </a>
+
+  <ul class="layout-topbar-icons" *ngIf="showConfigMenu"
+      [ngClass]="{'layout-topbar-usermenu-activefadeInDown': appComponent.topbarMenuConfigActive}">
+    <li>
+      <a href="#" class="layout-topbar-icon-yellow" (click)="appComponent.onTopbarMenuButtonClickConfig($event)">
+        <i class="fa fa-cog"></i>
+      </a>
+    </li>
+  </ul>
+
+  <ul class="layout-topbar-usermenu"
+      [ngClass]="{'layout-topbar-usermenu-active fadeInDown': appComponent.topbarMenuActive}">
+    <li class="layout-topbar-usermenu-header">
+      <img src="assets/layout/images/avatar.png" alt="User Menu" class="logo-header"/>
+      <div class="layout-topbar-usermenu-info">
+
+        <div class="layout-topbar-usermenu-name">{{user?.name}}</div>
+        <div class="layout-topbar-usermenu-role">{{user?.userType?.value}}</div>
+
+      </div>
+    </li>
+    <li #settings class="li-menu-class">
+      <a (click)="openDynamicDialogRefAbout()">
+        <i class="fa fa-fw fa-info-circle"></i>
+        <span class="topbar-item-name">Sobre</span>
+      </a>
+    </li>
+    <li #logout (click)="appComponent.logout()" class="li-menu-class">
+      <a href="#">
+        <i class="fa fa-fw fa-sign-out"></i>
+        <span class="topbar-item-name">Logout</span>
+      </a>
+    </li>
+  </ul>
+
+  <ul class="layout-topbar-usermenu"
+      [ngClass]="{'layout-topbar-usermenu-active fadeInDown': appComponent.topbarMenuConfigActive}">
+    <li *ngFor="let item of menuList" class="li-menu-class">
+      <a (click)="[appComponent.navigateToRoute(item.route)];" *ngIf="item.type.value == 'PORTAL_CONFIG' && item.show == true">
+        <i class="{{item.icon}}"></i>
+        <span class="topbar-item-name">{{item.name}}</span>
+      </a>
+    </li>
+  </ul>
+</div>

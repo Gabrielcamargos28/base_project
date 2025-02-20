@@ -1,1 +1,155 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+  font-size: 12px;
+}
+
+.layout-wrapper .layout-topbar .layout-menu-button{
+  margin-left: 0px;
+}
+
+.layout-topbar-icons{
+  float: right;
+}
+
+.language-selected {
+  padding: 2px;
+  background-color: #ffffff;
+  border-radius: 50px;
+}
+
+.language-unselected {
+  padding: 3px;
+  filter: grayscale(35%);
+}
+
+@media screen and (max-width: 40em){
+  .layout-wrapper .layout-topbar .layout-topbar-icons {
+    float: right;
+    width: 20%;
+    margin-top: 2px;
+    text-align: right;
+  }
+}
+
+@media screen and (max-width: 40em){
+  .layout-wrapper .layout-topbar {
+    height: 90px;
+  }
+}
+
+/* .layout-footer{
+    padding: 0px;
+} */
+
+body .ui-table .ui-table-thead > tr > th {
+  border: 0px;
+  background-color: #f4f4f4;
+}
+
+body .ui-table .ui-table-tbody > tr > td {
+  border: 0px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+body .ui-table .ui-table-caption, body .ui-table .ui-table-summary{
+  border: 0px;
+  background-color: #f4f4f4;
+  text-align: left;
+  font-weight: bold;
+  color: #666666;
+}
+
+body .ui-paginator {
+  border: 0px;
+}
+
+.session-content{
+  padding-top: 0.5%;
+  color: #333333;
+  border-bottom: 1px solid #ced4da;
+}
+
+body .ui-breadcrumb{
+  background-color: #f4f4f4;
+  border: 0px;
+}
+
+.input-switch{
+  padding-top: 5px;
+}
+
+.input-switch-component{
+  padding-left: 3px;
+}
+
+.spacer{
+  padding-top: 15px;
+}
+
+.ui-float-label{
+  margin-bottom: 10px;
+}
+
+.layout-wrapper .layout-topbar .layout-topbar-usermenu.layout-topbar-usermenu-active {
+  z-index: 4000;
+}
+
+
+.layout-wrapper.layout-slim .layout-menu-container .layout-menu .icon_svg {
+  width: 30px;
+  height: 30px;
+}
+
+.icon_svg{
+  width: 15px;
+  height: 15px;
+  margin-right: 5px;
+}
+
+.li-menu-class{
+  cursor: pointer;
+}
+
+.ui-breadcrumb {
+  margin-top: -20px;
+  margin-bottom: -10px;
+  margin-left: -10px;
+}
+
+.logo-header{
+  width: 150px;
+  cursor: pointer;
+}
+.p-datatable table {
+  font-size: 12px;
+}
+
+.p-datatable .p-datatable-tbody > tr.p-highlight {
+  background: #A9C7DF;
+  color: #000000;
+}
+
+.p-paginator .p-paginator-pages .p-paginator-page.p-highlight {
+  background: #A9C7DF;
+  border-color: #A9C7DF;
+  color: #000000;
+}
+
+.layout-wrapper .layout-main .layout-content {
+  padding: 20px;
+}
+
+.trashModel{
+  max-width: 50px;
+}
+
+
+.proposalDetailLineResume{
+  height: 40px;
+}
+
+.proposalDetailLineResumeTotal{
+  height: 45px;
+}
